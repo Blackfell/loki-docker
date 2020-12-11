@@ -16,7 +16,7 @@ This is a seriously messed up docker implementation of [the original Loki tool](
 
 It is up to you to decide if you want to continue from here, you could simply go and install Loki yourself, which will give you a safer and more secure implementation, as well as hours of quality entertainment and dependency management joy. 
 
-## installation
+## Installation
 
 This image is just and so available at version 0.6 via dockerhub, so no manual setup is required, simply use:
 
@@ -26,7 +26,7 @@ $ git clone https://github.com/Blackfell/loki-docker && cd loki-docker && sudo .
 
 And you're away. 
 
-Of you could pull the image and run directly, All packages have been pulled directly from [the upstream Loki developers](https://insinuator.net/tag/loki/), you should be able to rebuild downloading these yourself.  Or if you like manual setup, you could:
+Of you could pull the image and run directly, All packages have been pulled directly from [the upstream Loki developers](https://insinuator.net/tag/loki/), so if you like manual setup, you should be able to rebuild, optionally re-downloading these yourself:
 
 ```
 $ git clone https://github.com/Blackfell/loki-docker loki-docker && cd loki-docker
