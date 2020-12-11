@@ -18,19 +18,20 @@ Only a foolish person would run a tool this way, so you probably shouldn't downl
 
 ## installation
 
-This image is not available at version 0.6 via dockerhub (standby!), so no manual setup is required, simply use:
+This image is just and so available at version 0.6 via dockerhub, so no manual setup is required, simply use:
 
 ```
-$ sudo ./run_loki.sh
+$ git clone https://github.com/Blackfell/loki-docker && cd loki-docker && sudo ./run_loki.sh
 ```
+
 And you're away. 
 
-If you like manual setup, you could:
+Of you could pull the image and run directly, of if you like manual setup, you could:
 
 ```
 $ git clone https://github.com/Blackfell/loki-docker loki-docker && cd loki-docker
 [...]
-$  sudo docker build -t loki:0.6 . # Loki version worked to is 0.6, get into the habit as I'll push this version to Docker hub eventually
+$  sudo docker build -t loki:0.6 . 
 [...]
 ```
 
