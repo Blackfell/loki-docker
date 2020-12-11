@@ -18,13 +18,23 @@ Only a foolish person would run a tool this way, so you probably shouldn't downl
 
 ## installation
 
-This image is not yet available via dockerhub (standby!), so manual setup is required:
+This image is not available at version 0.6 via dockerhub (standby!), so no manual setup is required, simply use:
+
+```
+$ sudo ./run_loki.sh
+```
+And you're away. 
+
+If you like manual setup, you could:
+
 ```
 $ git clone https://github.com/Blackfell/loki-docker loki-docker && cd loki-docker
 [...]
 $  sudo docker build -t loki:0.6 . # Loki version worked to is 0.6, get into the habit as I'll push this version to Docker hub eventually
 [...]
 ```
+
+Then you could replace the call to blackfell/loki:0.6 with your local image name. 
 
 ## Usage 
 
@@ -34,7 +44,7 @@ https://insinuator.net/tag/loki/
 The default docker command mounts /opt/loki-data to container root, as well as mounting /usr/share/wordlists to /root/wordlists and can be called via the quick script included in this repo. 
 
 ```
-$ ./run_loki.sh
+$ sudo ./run_loki.sh
 # Profit
 ```
 ### Entry point?
