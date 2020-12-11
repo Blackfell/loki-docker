@@ -12,9 +12,9 @@ This implementation of Loki has been (briefly!) tested on Kali linux 2020.1, wit
 
 ## Warning!
 
-This is a seriously messed up docker implementation of [the original Loki tool](https://insinuator.net/tag/loki/). Why? Well because it's been wrestled into a container and still needs to function, it has been configured to run in privileged mode with full host network access and a valid xorg magic cookie. 
+This is a seriously messed up docker implementation of [the original Loki tool](https://insinuator.net/tag/loki/). Why? Well because it's been wrestled into a container and still needs to function, it has been configured to run in privileged mode with full host network access and a valid xorg magic cookie so that it can still do its thing. Only a foolish person would run a tool this way, so you probably shouldn't download, run or use this implementation - it's risky and may break, for eveyone's sake, close the browser now and enjoy your life. 
 
-Only a foolish person would run a tool this way, so you probably shouldn't download, run or use this implementation, because it's risky, may break. It is up to you to decide if you want to continue here, or to go an install Loki yourself, which will be safer and give you hours of quality entertainment. All packages have been pulled directly from [the upstream Loki developers](https://insinuator.net/tag/loki/), you should be able to rebuild downloading these yourself. 
+It is up to you to decide if you want to continue from here, you could simply go and install Loki yourself, which will give you a safer and more secure implementation, as well as hours of quality entertainment and dependency management joy. 
 
 ## installation
 
@@ -26,7 +26,7 @@ $ git clone https://github.com/Blackfell/loki-docker && cd loki-docker && sudo .
 
 And you're away. 
 
-Of you could pull the image and run directly, of if you like manual setup, you could:
+Of you could pull the image and run directly, All packages have been pulled directly from [the upstream Loki developers](https://insinuator.net/tag/loki/), you should be able to rebuild downloading these yourself.  Or if you like manual setup, you could:
 
 ```
 $ git clone https://github.com/Blackfell/loki-docker loki-docker && cd loki-docker
