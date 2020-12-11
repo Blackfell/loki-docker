@@ -2,7 +2,7 @@
 
 **This build is very much in Alpha!** Read on, heed the warnings and take care.
 
-A Dockerised implementation of Insinuators Loki networking attack tool. 
+A Dockerised implementation of Insinuators Loki networking attack tool for use on Linux, tested only on Kali 2020.
 
 This tool is not actively maintained and has just been developed to support OSPF Route Injection attacks for a specific learning activity I'm undertaking. Any comments, feedback or pull requests very welcome to improve protability of Loki, which is, but for its difficulty of installation, an excellent tool. 
 
@@ -12,7 +12,7 @@ This implementation of Loki has been (briefly!) tested on Kali linux 2020.1, wit
 
 ## Warning!
 
-This is a seriously messed up docker implementation of [the original Loki tool](https://insinuator.net/tag/loki/). Why? Well because it's been wresdtled into a container and still needs to function, it has been configured to run in privileged mode with full host network access and a valid xorg magic cookie. 
+This is a seriously messed up docker implementation of [the original Loki tool](https://insinuator.net/tag/loki/). Why? Well because it's been wrestled into a container and still needs to function, it has been configured to run in privileged mode with full host network access and a valid xorg magic cookie. 
 
 Only a foolish person would run a tool this way, so you probably shouldn't download, run or use this implementation, because it's risky, may break. It is up to you to decide if you want to continue here, or to go an install Loki yourself, which will be safer and give you hours of quality entertainment. All packages have been pulled directly from [the upstream Loki developers](https://insinuator.net/tag/loki/), you should be able to rebuild downloading these yourself. 
 
